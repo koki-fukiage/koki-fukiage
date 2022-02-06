@@ -18,4 +18,14 @@ jsの内容
 
 ーーーDOM操作ーーー
 1,createElementでjavascript上でhtmlを生成する
-2,
+2,まずdivタグを生成する（const div = document.createElement("div")）
+3,divタグにクラスを付与（className="list-low"）
+→classNameはプロパティ、イコールで渡す
+4,liを生成（const li = document.createElement("li")）
+5,liにテキストの値を入力する（li.innerText = inputText ）
+6,divタグの直下に作成（div.appendChild(li)）
+→appendChildメソッド、引数を渡す、"直下に作成する"意味を持つ
+7,ulの直下にdiv生成(document.getElementById("imcomplete-list").appendChild(div);)
+8,完了ボタンを追加する(const completeButton = document.createElement("button");)
+9,ボタンのテキスト入力(completeButton.innerText="完了"；)
+10,削除ボタンを追加する(const imcompleteButton = document.createElement("button");)
